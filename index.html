@@ -3,43 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Docker NGINX</title>
+    <title>Student Details</title>
 
     <style>
         body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
         }
 
-        .box {
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h2 {
             text-align: center;
-            background: #1e293b;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            color: #333;
         }
 
-        h1 {
-            color: #38bdf8;
+        label {
+            font-weight: bold;
         }
 
-        p {
-            color: #cbd5e1;
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .result {
+            margin-top: 20px;
+            background: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
+
 <body>
 
-    <div class="box">
-        <h1>NAVEEN Docker Container Running 🚀</h1>
-        <p>Your custom index.html is working successfully.</p>
+    <div class="container">
+        <h2>Student Registration Form</h2>
+
+        <form>
+            <label>Student Name</label>
+            <input type="text" placeholder="Enter student name">
+
+            <label>Roll Number</label>
+            <input type="text" placeholder="Enter roll number">
+
+            <label>Department</label>
+            <input type="text" placeholder="Enter department">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter email">
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter phone number">
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="result">
+            <h3>Student Information</h3>
+            <p>Name: Naveen Kumar</p>
+            <p>Roll No: 101</p>
+            <p>Department: Computer Science</p>
+            <p>Email: naveen@example.com</p>
+            <p>Phone: 9876543210</p>
+        </div>
     </div>
 
 </body>
